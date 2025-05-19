@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Utils</title>
+</head>
+<body>
+<h1>Welcome to the text analyzer. Enter your text below:</h1>
+<form action='/analyze' method="post">{% csrf_token %}
+    <textarea name = 'text' style="width: 601px; height: 70px;"></textarea><br>
+    <input type="checkbox" name="removepunc"> Remove Punctuation <br>
+    <input type="checkbox" name="fullcaps"> Full capitalize <br>
+    <input type="checkbox" name="newlineremove"> New Line Remover <br>
+    <button>Analyze text</button>
+</form>
+</body>
+</html>
